@@ -1,1 +1,263 @@
 /* Your styles go here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #e8f5e9, #e0f7fa);
+  color: #333;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(145deg, #00bfa5, #00796b);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #00e5ff;
+  color: #004d40;
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00695c;
+}
+
+section p,
+section ul {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.destino {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #ffffffcc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.destino img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.destino img:hover {
+  transform: scale(1.03);
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #004d40;
+  color: white;
+  border-radius: 12px;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  .destino {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .destino img {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  .destino p {
+    flex: 1 1 65%;
+  }
+}
+
+#comida {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fff5b5, #f2be91);
+  color: #000000;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#comida .section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff9800;
+  font-weight: 700;
+}
+
+#comida .section-text {
+  font-size: 1.1em;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.food-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.food-item {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: translateY(-10px);
+}
+
+.food-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+#cultura {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ca4848, #ea954a);
+  color: #090000;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#cultura .section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+#cultura .section-text {
+  font-size: 1.1em;
+  color: #0c0000;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.culture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.culture-item {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.culture-item:hover {
+  transform: translateY(-10px);
+}
+
+.culture-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.culture-images img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.culture-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}

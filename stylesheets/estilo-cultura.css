@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #ffb6b6, #ff5959);
+  color: #333;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #b70000, #610101);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(145deg, #f86d6d, #960a00);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #ff8686;
+  color: #770000;
+  box-shadow: 0 0 15px #ff4f4f;
+}
+
+/* SECCIÓN COMIDA */
+#cultura {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f38181, #f6c2c2);
+  color: #000;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#cultura .section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #790000;
+  font-weight: 700;
+}
+
+#cultura .section-text {
+  font-size: 1.1em;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.cultura-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cultura-item {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cultura-item:hover {
+  transform: translateY(-10px);
+}
+
+.cultura-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
